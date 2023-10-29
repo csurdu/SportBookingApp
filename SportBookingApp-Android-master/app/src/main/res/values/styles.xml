@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CalendarViewStyle" >
+        <item name="android:textColorPrimary">@color/black</item>  <!-- Change text color -->
+        <item name="android:textStyle">bold</item>  <!-- Make text bold -->
+    </style>
+
+    <style name="GradientText">
+        <item name="android:textColor">@drawable/gradient_text</item>
+    </style>
+
+</resources>

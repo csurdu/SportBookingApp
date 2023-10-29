@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Create a checkered drawable shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="32dp" android:height="32dp" />
+            <solid android:color="#66F9D4" />
+            <corners android:radius="4dp" />
+            <padding android:left="8dp" android:top="8dp" />
+            <corners android:bottomRightRadius="4dp" android:topLeftRadius="4dp" />
+            <corners android:bottomLeftRadius="4dp" android:topRightRadius="4dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#F9B066" />
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <gradient
+                    android:startColor="#66F9B0"
+                    android:endColor="#2196F3"
+                    android:type="linear"
+                    android:angle="135" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

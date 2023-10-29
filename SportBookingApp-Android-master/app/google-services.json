@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1011743176112",
+    "firebase_url": "https://sportbookingapp-default-rtdb.firebaseio.com",
+    "project_id": "sportbookingapp",
+    "storage_bucket": "sportbookingapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011743176112:android:a24e4c8d1c7effebe95275",
+        "android_client_info": {
+          "package_name": "com.example.sportbookingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011743176112-lljd0kduavp7ibdks242lrhdjacelde2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportbookingapp",
+            "certificate_hash": "f79e4d6d1953575b9815ea3f0007fba805a71ac0"
+          }
+        },
+        {
+          "client_id": "1011743176112-jfiuhborm6n35a8kasceredqvb23qqtp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrr-txWgxzCdESOfstriM7f0uFqW0oxbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011743176112-jfiuhborm6n35a8kasceredqvb23qqtp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

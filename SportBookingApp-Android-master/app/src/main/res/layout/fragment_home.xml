@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sportsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/sports_recycler_view_item" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CalendarViewStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/startingHourTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:minHeight="48dip"
+            android:minWidth="192dip"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:text="@string/starting_hour"/>
+
+        <Spinner
+            android:id="@+id/startingHourSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/starting_hour"
+            android:minHeight="48dip"
+            android:visibility="invisible"
+            android:prompt="@string/spinner_prompt_text"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/endingHourTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:minHeight="48dip"
+            android:minWidth="192dip"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            android:text="@string/ending_hour"/>
+
+        <Spinner
+            android:id="@+id/endingHourSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ending_hour"
+            android:minHeight="48dip"
+            android:visibility="invisible"
+            android:prompt="@string/spinner_prompt_text"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="4dip"
+        android:minHeight="48dip"
+        android:minWidth="192dip"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        android:text="@string/total_price"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_reservation_button"
+        android:layout_width="wrap_content"
+        android:minWidth="256dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dip"
+        android:background="@drawable/login_button"
+        android:visibility="invisible"
+        android:text="@string/make_reservation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+</LinearLayout>
